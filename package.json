@@ -63,7 +63,7 @@
     "build:docs": "NODE_ENV=production nps build:docs",
     "start": "webpack-dev-server --progress",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b main -d dist",
     "lint": "eslint -c ./.eslintrc.js ./src",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "test": "jest",
